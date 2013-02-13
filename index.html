@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pixelizr</title>
+		
+		<script type="text/javascript" src="pixelizr.js"></script>
+
+	</head>
+
+	<body>
+
+
+		<div id="pixelizr">
+		</div>
+
+		<script type="text/javascript">
+			var level = [ 
+							 [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+							 [1,1,1,1,0,0,0,1,0,0,1,0,1,1,1,0,1,0,0,0,0,0,1,1,1,0,1,1,1,1,0],
+							 [1,0,0,1,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1,0,1,0,0,1,0],
+							 [1,1,1,1,0,1,0,0,1,1,0,0,1,1,0,0,1,0,0,0,1,0,0,1,0,0,1,1,1,0,0],
+							 [1,0,0,0,0,1,0,1,0,0,1,0,1,0,0,0,1,0,0,0,1,0,1,0,0,0,1,0,0,1,0],
+							 [1,0,0,0,0,1,0,1,0,0,1,0,1,1,1,0,1,1,1,0,1,0,1,1,1,0,1,0,0,1,0],
+						   ];
+			
+			/*
+			 Creates a little game that use a matrix
+			 to create a level
+			*/
+			var pixelizeLogo = new Pixelizer(level);
+			
+			// 20 is the size of the pixels
+			// you can customize the size of each
+			// "pixel" by changing this value
+			pixelizeLogo.pixelizeMatrix(20);
+
+			// Putting hero on screen!
+			// (row, col)
+			pixelizeLogo.putCharacterOnScreen(0, 5);
+
+			// Enemy on screeeeeen!
+			// (row, col)
+			pixelizeLogo.putEnemyOnScreen(0, 20);
+		</script>
+
+	</body>
+</html>
