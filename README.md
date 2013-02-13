@@ -8,6 +8,7 @@ How-to
 --------------------------------------
 
 You only need 3 things:
+
 1. pixelizr.js
 2. a div with "pixelizr" id.
 3. the code contained in the bottom of the included index.html
