@@ -3,7 +3,7 @@
 * 
 * MIT LICENSE
 * 
-* Originally created in 2010, published 2013
+* 2013
 * All rights reserved.
 */
 
